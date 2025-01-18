@@ -49,7 +49,7 @@ const checkOrbiterDrop = async (wallet, proxy=null) => {
 
     const data = await response.json();
     const { result } = data;
-    return result == null ? 0 : result;
+    return result == null ? 0 : result.amount;
 };
 
 
